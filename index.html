@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dunkin'</title>
+</head>
+<body>
+    <section>
+
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="images/icon.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox" >
+                <h2>Coffee That's Worth Waking Up For<br><img class="logo-2" src="images/logo.png" alt=""></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde a, nisi obcaecati quibusdam commodi aliquam suscipit illo quos iusto non sed quas sint, ducimus consequuntur perferendis del.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <img class="coffee" src="images/iced-macchiatto.png" alt="">
+        </div>
+        
+        <ul class="thumb">
+            <li><img class="thumb-img" src="images/iced-macchiatto.png" onclick="imgSlider('images/iced-macchiatto.png');changeCircleColor('linear-gradient(110deg, rgba(229,45,121,1) 51%, rgba(241,129,8,1) 100%)')"></li>
+            <li><img class="thumb-img" src="images/frappe.png" onclick="imgSlider('images/frappe.png');changeCircleColor('linear-gradient(130deg, rgba(229,45,121,1) 51%, rgba(241,129,8,1) 100%)')"></li>
+            <li><img class="thumb-img" src="images/cold-brew.png" onclick="imgSlider('images/cold-brew.png');changeCircleColor('linear-gradient(150deg, rgba(229,45,121,1) 51%, rgba(241,129,8,1) 100%)')"></li>
+            <li><img class="thumb-img" src="images/frozen-coffee.png" onclick="imgSlider('images/frozen-coffee.png');changeCircleColor('linear-gradient(170deg, rgba(229,45,121,1) 51%, rgba(241,129,8,1) 100%)')"></li>
+        </ul>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.coffee').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+</html>
